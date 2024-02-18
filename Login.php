@@ -37,7 +37,7 @@ function displayMessages() {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate reCAPTCHA
-    $recaptcha_secret_key = "6LctKncpAAAAAI5Oey4hiAGVjwk3e9aGpHmemi8k";
+    $recaptcha_secret_key = "6LdWrFEpAAAAALlQnK2BxtzTcJFBYr3uXhFTyR7C";
     $recaptcha_response = $_POST['g-recaptcha-response'];
 
     $recaptcha_url = "https://www.google.com/recaptcha/api/siteverify";
@@ -120,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="form-group">
                     <input type="password" class="form-control" name="password" placeholder="Password" required>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LctKncpAAAAALbI_BGL39HgruwQ9U_qwNz0V6gZ"></div>
+                <div class="g-recaptcha" data-sitekey="6LdWrFEpAAAAACZGkhQa3g5y2eWmXRh8ZVX2YpgH"></div>
                 <div class="form-group">
                     <input type="hidden" name="csrf_token" value="<?php echo generate_csrf_token(); ?>">
                     <input type="submit" class="btn btn-primary" value="Register" name="submit">
