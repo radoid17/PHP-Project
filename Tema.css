@@ -1,0 +1,58 @@
+#Titlu {
+    text-align: center;
+}
+
+#Titlu li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+}
+
+#PrimaLinie {
+    color: rgb(35, 160, 149);
+    font-size: 40px;
+}
+
+a.a {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul.a {
+    text-align: center;
+    margin: auto;
+    background-color: rgba(35, 160, 149, 0.781);
+    border-radius: 10px;
+    max-width: 1200px;
+    font-size: 25px;
+}
+
+#Continut {
+    text-align: center;
+    background-color: rgba(35, 160, 149, 0.781);
+    margin: auto;
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+#Continut table {
+    margin: auto; /* Center the table */
+    width: 80%; /* Adjust the width as needed */
+}
+
+#allwaydown {
+    text-align: center;
+    margin: auto;
+    background-color: rgba(35, 160, 149, 0.781);
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+body {
+    background-image: url('paper-photo-wallpaper-football-stadium-champions--\(2\)-32457-p.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
