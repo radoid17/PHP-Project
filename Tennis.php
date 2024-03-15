@@ -74,8 +74,6 @@ if(!isset($_SESSION['user_id'])){
             </tr>
         </table>
         <a href="export3.php">Export data</a>
-        <a href="import.php">Import data</a>
-        <a href="statistica3.php">Statistics</a>
     </nav>
     <footer id="allwaydown">
         <p>@Site Radoi Dragos Cosmin</p>

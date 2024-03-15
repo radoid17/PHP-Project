@@ -20,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['user_id'] = $row['id'];
             $_SESSION['username'] = $row['full_name'];
             
-            // Redirect to index.php
             header("Location: index.php");
             exit();
         } else {
@@ -33,7 +32,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $selectUserQuery->close();
     $conn->close();
     
-    // Redirect back to login page with error message
     header("Location: Login.php");
     exit();
 }

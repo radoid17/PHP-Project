@@ -1,18 +1,14 @@
 <?php
-session_start(); // Asigură-te că sesiunea este pornită
+session_start(); 
 
-// Functie pentru filtrarea output-ului impotriva XSS
 function secure_output($data) {
     return htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
 }
 
-// Functie pentru validarea input-urilor impotriva Form Spoofing
 function validate_input($input) {
-    // Adauga aici regulile tale de validare
-    return $input; // Returneaza input-ul validat
+    return $input; 
 }
 
-// Functie pentru generarea token-ului anti-CSRF
 function generate_csrf_token() {
     if (empty($_SESSION['csrf_token'])) {
         $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
@@ -21,7 +17,6 @@ function generate_csrf_token() {
     return $_SESSION['csrf_token'];
 }
 
-// Verificare pentru a afișa mesaje de eroare/succes
 function displayMessages() {
     if (isset($_SESSION['error_message'])) {
         echo '<div class="error-message">' . secure_output($_SESSION['error_message']) . '</div>';
@@ -36,7 +31,6 @@ function displayMessages() {
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Validate reCAPTCHA
     $recaptcha_secret_key = "6LdWrFEpAAAAALlQnK2BxtzTcJFBYr3uXhFTyR7C";
     $recaptcha_response = $_POST['g-recaptcha-response'];
 

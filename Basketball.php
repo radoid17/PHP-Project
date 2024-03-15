@@ -113,8 +113,6 @@ if(!isset($_SESSION['user_id'])){
         </tr>
     </table>
         <a href="export2.php">Export data</a>
-        <a href="import.php">Import data</a>
-        <a href="statistica2.php">Statistics</a>
 </nav>
 
     <footer id = "allwaydown">

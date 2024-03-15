@@ -69,14 +69,6 @@ $result = $conn->query($query);
                 echo '<div>';
                 echo '  <p><strong>' . $row['full_name'] . '</strong> (' . $row['timestamp'] . '):</p>';
                 echo '  <p>' . $row['comment_text'] . '</p>';
-
-                if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'admin') {
-                    echo '  <form action="delete_comment.php" method="post">';
-                    echo '      <input type="hidden" name="comment_id" value="' . $row['id'] . '">';
-                    echo '      <input type="submit" value="Delete">';
-                    echo '  </form>';
-                }
-
                 echo '</div>';
             }
         } else {

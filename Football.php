@@ -152,8 +152,6 @@ if(!isset($_SESSION['user_id'])){
             </tr>
         </table>
         <a href="export1.php">Export data</a>
-        <a href="import.php">Import data</a>
-        <a href="statistica1.php">Statistics</a>
     </nav>
     <footer id="allwaydown">
         <p>@Site Radoi Dragos Cosmin</p>
